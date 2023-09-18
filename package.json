@@ -8,6 +8,7 @@
   "repository": "https://github.com/JasonEtco/prosebot.git",
   "homepage": "https://github.com/JasonEtco/prosebot",
   "bugs": "https://github.com/JasonEtco/prosebot/issues",
+  "main": "main.js",
   "keywords": [
     "probot",
     "github",
@@ -15,8 +16,9 @@
   ],
   "scripts": {
     "dev": "nodemon",
-    "start": "probot run ./index.js",
+    "start": "node ./main.js",
     "test": "jest --coverage",
+    "posttest": "npm run lint",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage",
     "lint": "prettier --check '{lib,test}/**/*.{js,json,ts}' index.js *.md package.json",
     "lint:fix": "prettier --write '{lib,test}/**/*.{js,json,ts}' index.js *.md package.json"

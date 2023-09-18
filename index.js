@@ -1,4 +1,4 @@
-module.exports = prosebot;
+module.exports = prosebot
 
 const OutputGenerator = require('./lib/output-generator')
 const defaultConfig = require('./lib/default-config')
@@ -8,7 +8,7 @@ const defaultConfig = require('./lib/default-config')
  * @param {import('probot').Probot} app
  */
 function prosebot(app) {
-  app.on('pull_request', async function prosebot(context) {
+  app.on('pull_request', async function processPullRequest(context) {
     const { pull_request: pr, repository } = context.payload
     if (!pr) return
 
