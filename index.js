@@ -1,11 +1,13 @@
+module.exports = prosebot;
+
 const OutputGenerator = require('./lib/output-generator')
 const defaultConfig = require('./lib/default-config')
 
 /**
  * This is the entry point for your Probot App.
- * @param app - Probot's Application class.
+ * @param {import('probot').Probot} app
  */
-module.exports = (app) => {
+function prosebot(app) {
   app.on('pull_request', async function prosebot(context) {
     const { pull_request: pr, repository } = context.payload
     if (!pr) return
