@@ -45,9 +45,7 @@ This Probot App is mostly a wrapper around existing open source libraries. The m
 - [`node-spellchecker`](https://github.com/atom/node-spellchecker)
 - [`node-markdown-spellcheck`](https://github.com/lukeapage/node-markdown-spellcheck)
 
-### Future work
+### Want to host your own? Follow the below
 
-- Using [Suggested Changes](https://blog.github.com/changelog/2018-10-16-suggested-changes/) to... suggest changes.
-- Work on multiple PRs at a time
-- Nicer annotations
-- More providers? [Open an issue!](https://github.com/JasonEtco/prosebot/issues/new)
+- https://masteringbackend.com/posts/how-to-deploy-your-node-js-backend-project-to-vercel-a-step-by-step-guide
+- https://probot.github.io/docs/configuration/
